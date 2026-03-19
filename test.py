@@ -28,7 +28,3 @@ def factorial(n: int) -> int:
     if n <= 1:
         return 1
     return n * factorial(n - 1)
-
-
-def count_vowels(text: str) -> int:
-    return sum(1 for c in text.lower() if c in "aeiou")
