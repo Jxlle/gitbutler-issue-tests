@@ -20,15 +20,6 @@ def random_float_between(low: float, high: float) -> float:
     return low + (high - low) * random.random()
 
 
-def is_prime(n: int) -> bool:
-    if n < 2:
-        return False
-    for i in range(2, int(math.sqrt(n)) + 1):
-        if n % i == 0:
-            return False
-    return True
-
-
 def reverse_words(text: str) -> str:
     return " ".join(word[::-1] for word in text.split())
 
