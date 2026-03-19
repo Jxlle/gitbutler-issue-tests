@@ -38,9 +38,5 @@ def fibonacci(n: int) -> int:
     return fibonacci(n - 1) + fibonacci(n - 2)
 
 
-def clamp(value: float, min_val: float, max_val: float) -> float:
-    return max(min_val, min(value, max_val))
-
-
 def count_vowels(text: str) -> int:
     return sum(1 for c in text.lower() if c in "aeiou")
